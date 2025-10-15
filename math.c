@@ -9,6 +9,7 @@
 *   dot product, cross product, and scalar multiplication.
 * NOTE: CHATGPT ONLY USED FOR COMMENTS/DOCUMENTATION ALL CODE
 * WRITTEN BY ME AND ONLY ME ANDREW BIEBER
+* Quick demo change
 ********************************************************************/
 
 #include "math.h"
