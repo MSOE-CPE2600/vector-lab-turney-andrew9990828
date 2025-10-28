@@ -1,30 +1,39 @@
-# Lab 7 – Vector Calculator Updates
+# Lab 7/8 – Vector Calculator Updates
 
 **Course:** CPE-2600 Systems Programming  
 **Author:** Andrew Bieber  
 **Date:** October 27, 2025  
 
+---
+
 ## Overview
-This lab expands on the Week 5 Vector Calculator by adding:
-- Dynamic memory for unlimited vector storage  
-- File I/O commands (`load <file>` and `save <file>`) using CSV format  
-- Complete memory cleanup verified with Valgrind  
-- Javadoc-style documentation for all functions  
+This lab builds on the **Week 5 Vector Calculator** by introducing dynamic data structures and file persistence.  
+Enhancements include:
 
->  *AI (ChatGPT) was used exclusively for documentation guidance and Javadoc comment generation.  
->  All functional code was written by Andrew Bieber.*
+- **Dynamic memory allocation** for scalable vector storage (via `malloc` and `realloc`)  
+- **File I/O support** with `load <file>` and `save <file>` commands using CSV format  
+- **Complete memory cleanup** validated using **Valgrind**  
+- **Javadoc-style function documentation** for readability and maintainability  
+
+> *AI (ChatGPT) was used exclusively for documentation guidance and Javadoc comment generation.  
+> All functional code and logic were implemented independently by Andrew Bieber.*
+
+---
 
 ## Commands
+| Command | Description |
+|----------|--------------|
+| `load <file>` | Load vectors from a CSV file |
+| `save <file>` | Save all current vectors to a CSV file |
+| `list` | Display all stored vectors |
+| `clear` | Reset and free all stored vectors |
+| `quit` | Exit the program cleanly |
 
-
-## Commands
-- `load <file>` — Load vectors from CSV  
-- `save <file>` — Save all current vectors to CSV  
-- `list` — Display all stored vectors  
-- `clear` — Reset all stored vectors  
-- `quit` — Exit cleanly  
+---
 
 ## Build & Run
+To compile and test the program:
+
 make clean
 make
 valgrind ./minimat
